@@ -63,20 +63,20 @@ public class WaterBottles21 {
 	 
 	public int pickAfterUser(int pick1) {
 			//YOUR CODE STARTS HERE
-		bottles -= pick1;
-		this.printStream.println("bottles: " + bottles);
-		if (bottles <= 5) {
-			return bottles-1;
-		}
-		int ownPick = 1;
-		for (int i = 4; i >= 1; i--) {
-			if ((bottles-i) % 5 == 0) {
-				ownPick = i;
-				break;
-			}
-		}
-		bottles -= ownPick;
-		return ownPick;
+//		bottles -= pick1;
+//		this.printStream.println("bottles: " + bottles);
+//		if (bottles <= 5) {
+//			return bottles-1;
+//		}
+//		int ownPick = 1;
+//		for (int i = 4; i >= 1; i--) {
+//			if ((bottles-i) % 5 == 0) {
+//				ownPick = i;
+//				break;
+//			}
+//		}
+//		bottles -= ownPick;
+		return 5-pick1;
 	                //YOUR CODE ENDS HERE
 	}
 	 
